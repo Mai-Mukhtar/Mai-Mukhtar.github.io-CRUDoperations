@@ -1,0 +1,77 @@
+#alertName1 , #alertName2 , #alertName3 , #alertName4 {
+    display: none;
+}
+
+.contact{
+    background-image: url('../img/work-2.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    font-weight: bold;
+    color: darkslategrey;
+    /* color:  rgb(131, 80, 64); */
+}
+h1{
+    color: rgb(131, 80, 64);
+}
+.btn{
+    color: darkslategrey;
+    font-weight: bold;
+}
+th{
+    color: rgb(131, 80, 64);
+
+}
+.table-striped > tbody > tr:nth-of-type(odd) > *{
+    color:darkslategrey ;
+}
+.btn-warning {
+    color: #000;
+    background-color: #c6aa7f;
+    border-color: rgb(131, 80, 64);;
+}
+.btn-warning:hover {
+    color: #000;
+    background-color: rgba(110, 40, 18, 0.5);
+    border-color: rgb(0, 0, 0);
+}
+.btn-check:active + .btn-warning, .btn-check:checked + .btn-warning, .btn-warning.active, .btn-warning:active, .show > .btn-warning.dropdown-toggle {
+    color: #000;
+    background-color: rgba(110, 40, 18, 0.5);
+    border-color: rgb(0, 0, 0);
+}
+.btn-check:focus + .btn-warning, .btn-warning:focus {
+    color: #000;
+    background-color: rgba(110, 40, 18, 0.5);
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.25rem rgba(100, 72, 49, 50%);
+}
+/* .btn-danger{
+    color:#4b403c ;
+} */
+.btn-danger:hover {
+    color: #fff;
+    background-color: #5a4a45;
+    border-color: #5a4a45;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #ae6a5f;
+    border-color: #ae6a5f;
+}
+.alert-warning {
+    color: rgb(131, 80, 64);
+    background-color: #cfbea3;
+    border-color: #cfbea3;
+}

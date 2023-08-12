@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="contact">
+     <div class="bg-blue2 py-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6 col-sm-12">
+                    <div class="form">
+                        <div class=" p-5 shadow ">
+                            <h1>CRUD System</h1>
+                            <br>
+                            <label for="">Product Name </label>
+                            <input class="form-control" type="text" id="productName">
+                            <div id="alertName1" class="alert alert-warning alert-dismissible fade show" role="alert">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              <strong>please Start With Capital Letter</strong> 
+                            </div>
+                            
+                            <script>
+                              var alertList = document.querySelectorAll('.alert');
+                              alertList.forEach(function (alert) {
+                                new bootstrap.Alert(alert)
+                              })
+                            </script>
+                            
+                            
+                            <label for="">Product Category </label>
+                            <input class="form-control" type="text" id="productCategory">
+                            <div id="alertName2" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>please Start With Capital Letter!</strong> 
+                              </div>
+                              
+                              <script>
+                                var alertList = document.querySelectorAll('.alert');
+                                alertList.forEach(function (alert) {
+                                  new bootstrap.Alert(alert)
+                                })
+                              </script>
+                            <label for="">Product Price </label>
+                            <input class="form-control" type="text" id="productPrice">
+                            <div id="alertName3" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>please Enter Only Numbers!</strong> 
+                              </div>
+                              
+                              <script>
+                                var alertList = document.querySelectorAll('.alert');
+                                alertList.forEach(function (alert) {
+                                  new bootstrap.Alert(alert)
+                                })
+                              </script>
+                            <label  for="">Product Descreption </label>
+                            <textarea class="form-control" name="" id="productDesc"></textarea>
+                            <div id="alertName4" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>please Start With Capital Letter!</strong> 
+                              </div>
+                              
+                              <script>
+                                var alertList = document.querySelectorAll('.alert');
+                                alertList.forEach(function (alert) {
+                                  new bootstrap.Alert(alert)
+                                })
+                              </script>
+                            <br>  
+                            <button id="addBtn" class="btn btn-outline-dark">Add Product</button>
+                            <button id="clearBtn" class="btn btn-outline-dark">Clear</button>
+                        </div>
+                    </div>
+                          <div class=" p-5">
+                            <input id="productSearch" class="form-control" type="text" placeholder="Search . . .">
+                          </div>                   
+                 </div>
+                 <div class="col-md-6 col-sm-12">
+                    <div>
+                        <table class="table text-center m-5 table-striped">         
+                                <thead>
+                                    <th>Index</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Description</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
+                                </thead>
+                            <tbody id="tbody">
+                               
+                            </tbody>
+                        </table>    
+                    </div>   
+                 </div>      
+             </div>
+         </div>
+     </div>   
+</div>
+    
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
